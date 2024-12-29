@@ -1,4 +1,4 @@
-fn main() {
+fn variables() {
     // only let cant be changed
     // mut with let can make that variable mutable
     // mut cant be used with const
@@ -23,4 +23,32 @@ fn main() {
     }
 
     println!("apples {apples}");
+}
+
+fn data_types() {
+    // int float char bool are only four data types present
+    // i -> signed
+    // u -> unsigned
+    
+    let num: usize = 3241;
+    let num2 = 32i32; // you can define types as suffix
+    let num3 = 10_00_00_000; // also valid for representing large readable numbers
+    let ascii: u8 = b'A';
+    
+    let pi: f64 = 3.14; // floating points
+    
+    let yes: bool = true;
+
+    let x: char = '𝕏';
+
+    let tup: (i64, f64, u8, char) = (500, 6.4, 1, 'a');
+    let (x, y, z, w) = tup;
+    let tupchar = tup.3;
+
+    let arr = [1,2,3,4,5,6]; // of fixed length
+}
+
+fn main() {
+    // warnign there will be lots to unused variable errors
+    data_types();
 }
