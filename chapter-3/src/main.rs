@@ -50,5 +50,11 @@ fn data_types() {
 
 fn main() {
     // warnign there will be lots to unused variable errors
-    data_types();
+    let return_value = my_function();
+    println!("return is {return_value}");
+}
+
+// function declaration
+fn my_function() -> i32 {
+    32
 }
